@@ -1,8 +1,10 @@
-/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      animation: {
+        'spin-slow': 'spin 5s linear infinite',
+      },
       colors: {
         primary: "#00040f",
         secondary: "#5ce1e6",
@@ -18,7 +20,7 @@ module.exports = {
       ss: "620px",
       sm: "768px",
       md: "1060px",
-      lg: "1200px",
+      lg: "1350px",
       xl: "1700px",
     },
   },
