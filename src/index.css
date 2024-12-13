@@ -1,0 +1,47 @@
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.text-primary {
+    color: #0068c8;
+}
+
+.btn-primary {
+    background-color: #0068c8;
+}
+
+.border-primary {
+    border-color: #0068c8;
+}
+
+.grids {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.grid-start {
+    grid-column: span 2;
+    display: inline-grid;
+    position: relative;
+    align-self: flex-start;
+}
+
+.header {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+.radius-tag {
+    border-radius: 0 6px 6px 6px
+}
+
+.opacity {
+    opacity: 0.2;
+}
+
+.opacity:hover {
+    opacity: unset;
+}
