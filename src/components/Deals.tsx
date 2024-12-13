@@ -5,11 +5,9 @@ import "slick-carousel/slick/slick-theme.css";
 import { useState } from "react";
 import { FaHeart, FaChargingStation } from "react-icons/fa6"
 import { FaSearch } from "react-icons/fa"
-import { useCartContext } from "../context/CartContext";
 
 
 const Deals = () => {
-    const { addToCart } = useCartContext();
 
     const [mouse, setMouse] = useState<number>(-1)
 
@@ -63,24 +61,9 @@ const Deals = () => {
                                     </div>
                                     {mouse === index && (
                         <div className={`${mouse === index ? 'transition-all ease-in-out duration-[1.5s]' : 'transition-none'} absolute flex flex-col flex-wrap gap-2 items-center pt-4 right-3`}>
-                                <button  onClick={() => addToCart({
-                        id: slider.id,
-                        title: slider.title,
-                        price: slider.price,
-                        img: slider.img 
-                      })} title="Wishlist" className="size-10 bg-[#fff] transition-all ease-in-out duration-[1.5s] cursor-default hover:bg-[#e8f3fe] border border-[#0000001a] flex p-0 items-center text-center rounded-full"> <FaHeart  className="text-center m-auto"/> </button>
-                                <button  onClick={() => addToCart({
-                        id: slider.id,
-                        title: slider.title,
-                        price: slider.price,
-                        img: slider.img 
-                      })} title="Quick View" className="size-10 bg-[#fff] transition-all ease-in-out duration-[1.5s] cursor-default hover:bg-[#e8f3fe]  border border-[#0000001a] flex p-0 items-center text-center rounded-full"> <FaSearch  className="text-center m-auto"/> </button>
-                                <button  onClick={() => addToCart({
-                        id: slider.id,
-                        title: slider.title,
-                        price: slider.price,
-                        img: slider.img 
-                      })} title="Compare" className="size-10 bg-[#fff] transition-all ease-in-out duration-[1.5s] cursor-default hover:bg-[#e8f3fe] border border-[#0000001a] flex p-0 items-center text-center rounded-full"> <FaChargingStation className="text-center m-auto"/> </button>
+                                <button title="Wishlist" className="size-10 bg-[#fff] transition-all ease-in-out duration-[1.5s] cursor-default hover:bg-[#e8f3fe] border border-[#0000001a] flex p-0 items-center text-center rounded-full"> <FaHeart  className="text-center m-auto"/> </button>
+                                <button title="Quick View" className="size-10 bg-[#fff] transition-all ease-in-out duration-[1.5s] cursor-default hover:bg-[#e8f3fe]  border border-[#0000001a] flex p-0 items-center text-center rounded-full"> <FaSearch  className="text-center m-auto"/> </button>
+                                <button title="Compare" className="size-10 bg-[#fff] transition-all ease-in-out duration-[1.5s] cursor-default hover:bg-[#e8f3fe] border border-[#0000001a] flex p-0 items-center text-center rounded-full"> <FaChargingStation className="text-center m-auto"/> </button>
                             </div>
                             )}
                                 </bdo>
