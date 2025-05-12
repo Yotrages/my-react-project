@@ -11,7 +11,7 @@ const Topnav = () => {
             <img className="max-w-[170px]" src={logo} alt="logo" />
             <div className="flex items-center border-[3px] rounded-md pl-3 border-[#0068c8]">
             <p className="flex items-center gap-12 text-[#222] border-r border-[#ebebeb] mr-2">All categories <FaChevronDown className="mr-10"/> </p>
-            <input className="py-3 w-[300px] text-black inset-0" type="text" placeholder="Search for products"/>
+            <input className="py-3 focus:outline-none w-[300px] text-black inset-0" type="text" placeholder="Search for products"/>
             <button className="font-poppins rounded-sm btn-primary text-[17px] text-white font-[800] px-4 py-[0.75rem]" title="search">Search</button>
             </div>
             <div className="flex items-center gap-5">
