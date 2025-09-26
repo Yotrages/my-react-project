@@ -18,7 +18,11 @@ type CartProviderProps = {
   children: ReactNode;
 };
 
-const CartContext = createContext<CartContextType | undefined>(undefined);
+const CartContext = createContext<CartContextType | undefined>({
+  cartItems: [],
+  addToCart: (item) => {},
+  removeFromCart: (id) => {}
+});
 
 export const useCartContext = () => {
   const context = useContext(CartContext);

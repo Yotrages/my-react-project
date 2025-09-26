@@ -118,8 +118,7 @@ const Products = () => {
                         id: product.id,
                         title: product.title,
                         price: product.price,
-                        img: product.img // Convert price to number
-    // Optional, as this will be handled dynamically
+                        img: product.img 
                       })}
                   >
                     {product.buttonText}
